@@ -18,13 +18,13 @@
             <table>
                 <tr>
                     <td>Username</td>
-                    <td>:<</td>
-                    <td><input type= "text" name="username" required></td>
+                    <td>:</td>
+                    <td><input type="text" name="username" required></td>
                 </tr>
                 <tr>
                      <td>Password</td>
-                    <td>:<</td>
-                    <td><input type= "password" name="password" required></td>
+                    <td>:</td>
+                    <td><input type="password" name="password" required></td>
                 </tr>
                 <tr>
                     <td colspan="3">

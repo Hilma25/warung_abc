@@ -26,16 +26,16 @@ if (mysqli_num_rows($hasil) == 1) {
         $log .= "VALUES ('$id_user','login','$waktu')";
         mysqli_query($koneksi,$log);
 
-        header('Location : dashboard.php');
+        header('Location: dashboard.php');
         exit;
     } else {
         $_SESSION['pesan_error'] = 'password salah!';
-        header('Location : login.php');
+        header('Location: login.php');
         exit;
     }
     } else {
         $_SESSION['pesan_error'] ='Username tidak ditemukan!';
-        header('Location : login.php');
+        header('Location: login.php');
         exit;
     }
 ?>
