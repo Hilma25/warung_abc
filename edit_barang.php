@@ -1,6 +1,6 @@
 <?php
   //edit_barang.php
-  include 'include/cek_session.php';
+  include 'includes/cek_session.php';
   include 'config/koneksi.php';
   
   $id = $_GET['id'];
