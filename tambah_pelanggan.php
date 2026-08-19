@@ -1,4 +1,4 @@
-<!--tambah pelanggan.php-->
+<!--tambah_pelanggan.php-->
 <?php include 'includes/cek_session.php'; ?>
 <!DOCTYPE html>
 <html>
@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Tambah Pelanggan</h1>
-        <form action="proses_tambah_barang.php" method="POST">
+        <form action="proses_tambah_pelanggan.php" method="POST">
             <table>
                 <tr><td>Nama Pelanggan</td><td>:</td>
                     <td><input type="text" name="nama_pelanggan" required></td></tr>

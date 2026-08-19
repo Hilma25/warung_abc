@@ -55,7 +55,19 @@
                 <td colspan="2"><?php echo number_format($total, 0, ',', '.'); ?></td></tr>
         </table>
          
+        <?php
+        $sql_pelanggan = "SELECT * FROM tbl_pelanggan ORDER BY nama_pelanggan ASC";
+        $hasil_pelanggan = mysqli_query($koneksi, $sql_pelanggan);
+        ?>
         <form action="proses_simpan_transaksi.php" method="POST">
+            Pelanggan:
+            <select name="id_pelanggan">
+                <option value="">-- Pelanggan Umum --</option>
+                <?php while ($p = mysqli_fetch_assoc($hasil_pelanggan)) {?>
+                <option value="<?php echo $p['id_pelanggan']; ?>">
+                   <?php echo $p['nama_pelanggan']; ?></option>
+                <?php } ?>
+            </select>
             <input type="submit" value="Simpan Transaksi">
         </form>
         <p><a href="dashboard.php">Kembali Ke Dashboard</a></p>

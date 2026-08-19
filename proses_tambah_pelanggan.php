@@ -17,7 +17,7 @@
     $aktivitas = "tambah pelanggan: $nama";
     $log = "INSERT INTO tbl_log (id_user, aktivitas, waktu)";
     $log .= " VALUES ('$id_user', '$aktivitas', '$waktu')";
-    mysqli_query($koneksi, $sql);
+    mysqli_query($koneksi, $log);
 
     header('Location: data_pelanggan.php');
     exit;
